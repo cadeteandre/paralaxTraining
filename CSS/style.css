@@ -1,125 +1,69 @@
-/*Limpar formatações padrão*/
-
-* {
-	padding: 0;
+body, html {
 	margin: 0;
+	font: 16px "lato", sans-serif;
+	color: #777;
+	height: 100%;
 }
 
-body {
-	font-size: 1em;
-	font-family: "Trebuchen MS", Helvetica, sans-serif;
-	background: #e6e6e6;
-}
+.conteudo {
+	color: #777;
+	background-color: white;
+	text-align: justify;
+	padding: 50px 80px;				
 
-/**** Layout ****/
-
-#header-area {
-	background-color: #f7b600;
-	text-align: center;
-	padding: 15px;
-}
-
-.color-blog {
-	color: #fff;
-}
-
-#logo-area, #menu-area {
-	padding: 10px;
-}
-
-#main-area {
-	width: 920px;
-	margin: 0 auto;
-	padding: 15px;
-}
-
-#post-area {
-	width: 660px;
-	float: left;
-}
-
-.post {
-	padding: 20px;
-	margin-bottom: 20px;
-	background: #fff;
-}
-
-.post-date {
-	font-size: 0.8em;
-	border-bottom: 1px solid #f4f4f4;
-	padding-bottom: 10px;
-	margin-bottom: 10px;
-	display: block;
-}
-
-#side-area {
-	width: 240px;
-	float: right;
-}
-
-.side-content {
-	background: #fff;
-	padding: 10px;
-	margin-bottom: 20px;
-}
-
-.side-post {
-	font-size: 0.8em;
-	padding: 5px;
-	border-bottom: 1px dotted #ccc;
-}
-
-/**** Menu ****/
-
-a {
-	text-decoration: none;
-}
-
-#header-area a:link, #header-area a:visited {
-	color: #fff;
-	padding: 8px 12px;
-}
-
-#header-area a:hover {
-	color: #f7b600;
-	background: #fff;
-	text-decoration: none;
-}
-
-a:link, a:visited {
-	color: #f7b600;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-#side-area a {
-	display: block;
-}
-
-/**** General ****/
-
-h1 {
-	color: #4e4e4e;
-	font-size: 2.5em;
-}
-
-h2 {
-	color: #f7b600;
 }
 
 h3 {
-	background: #ccc;
-	color: #565656;
-	padding: 5px;
+	text-transform: uppercase;
+	color: #111;
+	text-align: center;
 }
 
-/**** Baseboard ****/
+p {
+	margin-bottom: 20px;
+}
 
-#baseboard {
-	text-align: center;
-	clear: both;
-	padding: 15px;
-	background: #ccc;
+/* Efeito parallax */
+
+.caixa1, .caixa2, .caixa3, .caixa4 {
+	position: relative;
+	height: 100%;
+	opacity: 0.7;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.caixa1 {
+	background-image: url(../imagens/imagem1.jpg);
+}
+
+.caixa2 {
+	background-image: url(../imagens/imagem2.jpg);
+}
+
+.caixa3 {
+	background-image: url(../imagens/imagem3.jpg);
+}
+
+.caixa4 {
+	background-image: url(../imagens/imagem4.jpg);
+}
+
+.conteudo-titulo {
+	position: absolute;
+	left: 0;
+	top: 45%;
+	width: 100%;	
+	text-align: center;							
+}
+
+.conteudo-titulo span.titulo {
+	color: #fff;	
+	background-color: #111;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
 }
